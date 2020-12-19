@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:hub_usb_sd-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -2244,4 +2243,8 @@ F 3 "https://gct.co/memory-card-connectors/pdf/mem1055.pdf" H 2550 5450 50  0001
 	1    2550 5450
 	-1   0    0    -1  
 $EndComp
+Text Notes 9600 3550 0    50   Italic 0
+Populate D3 only\nif bus-powered
+Text Notes 1250 6750 0    50   Italic 0
+Populate J7 only\nif self-powered
 $EndSCHEMATC
