@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title "Project 2901")
-    (date 2020-11-22)
+    (date 22/11/2020)
     (rev 1.0)
     (company "Douglas Almeida")
     (comment 1 "SD card reader with 2-port USB hub and I²C bridge.")
