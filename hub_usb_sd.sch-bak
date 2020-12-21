@@ -1009,16 +1009,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR043
 U 1 1 605288BD
-P 1800 7100
-F 0 "#PWR043" H 1800 6850 50  0001 C CNN
-F 1 "GND" H 1805 6927 50  0000 C CNN
-F 2 "" H 1800 7100 50  0001 C CNN
-F 3 "" H 1800 7100 50  0001 C CNN
-	1    1800 7100
+P 1800 7300
+F 0 "#PWR043" H 1800 7050 50  0001 C CNN
+F 1 "GND" H 1805 7127 50  0000 C CNN
+F 2 "" H 1800 7300 50  0001 C CNN
+F 3 "" H 1800 7300 50  0001 C CNN
+	1    1800 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 7100 1800 7050
+	1800 7300 1800 7150
 Wire Wire Line
 	1800 7050 1750 7050
 Wire Wire Line
@@ -1931,18 +1931,6 @@ Connection ~ 3550 2850
 Wire Wire Line
 	3550 2850 5500 2850
 $Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 5FBF0A96
-P 1550 6950
-F 0 "J7" H 1550 6750 50  0000 C TNN
-F 1 "External_Power" H 1550 7050 50  0000 C BNN
-F 2 "Extra:Metaltex_PEMN1-02_protruded_6_mm" H 1550 6950 50  0001 C CNN
-F 3 "~" H 1550 6950 50  0001 C CNN
-F 4 "PEMN1-02" H 1550 6950 50  0001 C CNN "Part#"
-	1    1550 6950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Extra:SHIELD #PWR0101
 U 1 1 5FDF8F6C
 P 10600 1150
@@ -2243,8 +2231,24 @@ F 3 "https://gct.co/memory-card-connectors/pdf/mem1055.pdf" H 2550 5450 50  0001
 	1    2550 5450
 	-1   0    0    -1  
 $EndComp
-Text Notes 10250 3900 0    50   Italic 0
+Text Notes 9600 3550 0    50   Italic 0
 Populate D3 only\nif bus-powered
-Text Notes 1250 6700 0    50   Italic 0
+$Comp
+L Connector:Barrel_Jack_Switch_Pin3Ring J7
+U 1 1 5FE1E0D9
+P 1450 7050
+F 0 "J7" H 1507 7367 50  0000 C CNN
+F 1 "External_Power" H 1507 7276 50  0000 C CNN
+F 2 "Extra:BarrelJack_DC-005_protruded_6_mm" H 1500 7010 50  0001 C CNN
+F 3 "~" H 1500 7010 50  0001 C CNN
+	1    1450 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7150 1800 7150
+Connection ~ 1800 7150
+Wire Wire Line
+	1800 7150 1800 7050
+Text Notes 1200 6650 0    50   Italic 0
 Populate J7 only\nif self-powered
 $EndSCHEMATC
